@@ -71,6 +71,11 @@ button {
   border: 1px solid darkred;
   cursor: pointer;
   font-weight: bold;
+  transition: 0.5s;
+}
+button:hover {
+  transform: scale(0.9);
+  color: white;
 }
 
 .fun {

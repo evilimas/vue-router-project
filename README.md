@@ -1,8 +1,8 @@
 # Vue Router Project
 
-# -- My Second Vue Project --
+## -- My Second Vue Project --
 
-This project showcases various simple applications built using Vue.js and Vue Router.
+This project showcases various simple applications **built with Vue.js and Vue Router using the Options API**.
 
 ## Description
 
@@ -22,14 +22,3 @@ Additionally, the project features:
 - **About Page:** Provides information about the project and its creator.
 - **Job Listings:** Displays available job positions with details.
 - **404 Page:** Handles routes that do not exist.
-
-## Project Structure
-
-The project structure is organized as follows:
-
-- `src/`: Contains the main source code files.
-  - `components/`: Contains Vue components used in the project.
-  - `views/`: Contains Vue components representing different views or pages.
-  - `router/`: Contains the Vue Router configuration.
-  - `App.vue`: The root Vue component.
-- `public/`: Contains static assets and the index.html file.
