@@ -2,7 +2,7 @@
   <div class="backdrop">
     <div class="modal">
       <button @click="closeForm" class="close-btn">X</button>
-      <h2>Registration Form</h2>
+      <h2 class="form-heading">Registration Form</h2>
       <form @submit.prevent="handleSubmit">
         <label>Email:</label>
         <input type="email" required v-model="email" />
@@ -36,7 +36,7 @@
         </div>
 
         <div class="submit">
-          <button>Create an Account</button>
+          <button class="submit-btn">Create an Account</button>
         </div>
       </form>
     </div>
@@ -94,7 +94,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .modal {
   width: 400px;
   padding: 20px;
@@ -102,10 +102,10 @@ export default {
   background: white;
   border-radius: 10px;
   position: relative;
-  z-index: 9999;
 }
 .backdrop {
   top: 0;
+  left: 0;
   position: fixed;
   background: rgba(0, 0, 0, 0.479);
   width: 100%;
@@ -158,10 +158,10 @@ input[type='checkbox'] {
   color: #777;
   cursor: pointer;
 }
-h2 {
+.form-heading {
   margin-bottom: -40px;
 }
-button {
+.submit-btn {
   background: #0b6dff;
   border: 0;
   padding: 10px 20px;
@@ -170,16 +170,18 @@ button {
   border-radius: 20px;
   cursor: pointer;
 }
-button:hover {
+.submit-btn:hover {
   background: #3887fd;
 }
 .close-btn {
   padding: 5px 10px;
   background: red;
+  color: white;
   position: absolute;
   right: 0;
   top: 0;
   cursor: pointer;
+  margin: 0;
 }
 .close-btn:hover {
   background: #810032;
